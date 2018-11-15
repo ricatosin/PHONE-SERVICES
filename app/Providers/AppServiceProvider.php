@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // I'm Setting the Schema to default string length cause it have problems with the MYSQL SIZE ! 
         Schema::defaultStringLength(191);
     }
 
