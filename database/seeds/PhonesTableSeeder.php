@@ -1,5 +1,6 @@
 <?php
 
+use App\Phone;
 use Illuminate\Database\Seeder;
 
 class PhonesTableSeeder extends Seeder
@@ -14,11 +15,11 @@ class PhonesTableSeeder extends Seeder
         // using faker to create random cases
         $faker = \Faker\Factory::create();
         //Lets Create now 30 name phone and ddd Seeder to populate our table Phone
-       foreach(range(1,50) as $index){
+       foreach(range(1,20) as $index){
             Phone::create([
-                'nome' => $faker->firstNameMale,
-                'ddd' => $faker->$faker->numberBetween($min = 11, $max = 99),
-                'phone_number' => $faker->phoneNumber
+                'nome' => $faker->name,
+                'ddd' => $faker->numberBetween($min = 11, $max = 99),
+                'phone_number' => $faker->randomDigit
             ]);
         }
 
