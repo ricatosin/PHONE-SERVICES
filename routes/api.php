@@ -13,6 +13,15 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+// Route::middleware('auth:api')->get('/user', function (Request $request) {
+//     return $request->user();
+// });
+
+Route::get('phones',function(){
+    return response(Phones::all(),200);
+});
+
+Route::get('phones/{phones}', function($phoneID){
+    return response(Phone::find($phoneID),200);
+    
 });
