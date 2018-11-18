@@ -1,11 +1,7 @@
 # PHONE-SERVICES
 Simple Phone API using Laravel + React.
 
-1 - This is a simple Application that uses Laravel to generate random names DDD and Phones add them to theto Mysql database and serve as an api using HTTP Methods, for more info how to use go to Usage Section.
-
-
-
-
+1 - This is a simple Application that uses Laravel to generate random names DDD and Phones add them to to Mysql database and serve as an api using HTTP Methods, for more info go to Usage Section.
 
 ## Installation
 
